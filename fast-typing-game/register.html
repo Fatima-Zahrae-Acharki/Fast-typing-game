@@ -4,16 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    \
     <link rel="stylesheet" href="register.css" />
     <title>REGISTER</title>
   </head>
   <body>
     <div class="fullSrceen"></div>
-    <img src="/assets/boy-and-girl.png" id="laptop">
-    <div class="login">
+    <img src="/assets/boy-and-girl.png" id="boy" />
+    <div class="register">
       <h2>REGISTER</h2>
       <form action="" method="GET" id="form">
+        <div class="user">
+          <div id="error_user"></div>
+          <input
+            type="text"
+            name="user"
+            id="user"
+            autocomplete="off"
+            required="off"
+          />
+          <label for="user" class="label-name"> <span>First name</span></label>
+        </div>
+        <div class="user">
+          <div id="error_user"></div>
+          <input
+            type="text"
+            name="user"
+            id="user"
+            autocomplete="off"
+            required="off"
+          />
+          <label for="user" class="label-name"> <span>Last name</span></label>
+        </div>
         <div class="user">
           <div id="error_user"></div>
           <input
@@ -36,11 +57,22 @@
           />
           <label for="password" class="label-name"><span>Password</span></label>
         </div>
-        <input type="submit" class="submit" id="btn" />
-        <p>Already have an account? <a href="login.html">Login</a>  now</p>
+        <div class="pass">
+          <div id="error_pass"></div>
+          <input
+            type="password"
+            name="password"
+            id="pass"
+            autocomplete="off"
+            required
+          />
+          <label for="password" class="label-name"
+            ><span>Confirm password</span></label
+          >
+        </div>
+        <input type="button" class="submit" id="btn" value="REGISTER" />
+        <p>Already have an account? <a href="login.html">Login</a> now</p>
       </form>
     </div>
-
-   
   </body>
 </html>
